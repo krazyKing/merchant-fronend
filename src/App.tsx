@@ -10,7 +10,6 @@ class App extends React.Component {
             <Merchants merchants={this.state.merchants} />
         );
     }
-
     componentDidMount() {
         fetch('http://localhost:4200/merchants')
             .then(res => res.json())
